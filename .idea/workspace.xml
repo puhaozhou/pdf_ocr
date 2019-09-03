@@ -80,6 +80,7 @@
       <option name="presentableId" value="Default" />
       <updated>1566976410164</updated>
       <workItem from="1566976417144" duration="25000000" />
+      <workItem from="1567158241958" duration="5615000" />
     </task>
     <task id="LOCAL-00001" summary="适配原文件格式">
       <created>1566986789047</created>
@@ -106,7 +107,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -117,7 +120,23 @@
     <MESSAGE value="LICENSE.TXT" />
     <option name="LAST_COMMIT_MESSAGE" value="LICENSE.TXT" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Ocr.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Ocr.py</url>
+          <line>20</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/baidu_ocr$Ocr.coverage" NAME="Ocr Coverage Results" MODIFIED="1567071793249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/baidu_ocr$Ocr.coverage" NAME="Ocr Coverage Results" MODIFIED="1567160632712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

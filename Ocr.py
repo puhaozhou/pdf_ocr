@@ -18,48 +18,61 @@ def get_image(img_path):
 
 
 def delete_words_item(words_list, index):
-    words_remove = words_list[index]
-    words_list.remove(words_remove)
+    # words_remove = words_list[index]
+    # words_list.remove(words_remove)
+    words_list[index] = ''
 
 
 # 删除字符串头部和尾部的.......符号
 def format_words(words):
     try:
+        if len(words) == 0:
+            return words
         words_list = list(words)
         # print(words_list)
         # 正序（头部）
-        delete_list = []
-        delete_model = ['.', ' ', '…']
+        delete_index = []
+        delete_items = ['.', ' ', '…']
+        # 正序遍历字符串数组，符合删除条件的，将索引存入delete_index
         for index in range(len(words_list)):
-            if words_list[index] in delete_model:
-                delete_list.append(index)
-        # print(delete_list)
-        if len(delete_list) >= 1 and delete_list[0] == 0 :
-            for index in range(len(delete_list)):
-                if index == 0:
-                    delete_words_item(words_list, delete_list[index])
-                else:
-                    if delete_list[index] - delete_list[index - 1] == 1:
-                        delete_words_item(words_list, delete_list[index])
+            if words_list[index] in delete_items:
+                delete_index.append(index)
+        # print(delete_index)
+        # 如果delete_index的第一位等于字符串数组的第一位，则遍历delete_index
+        if len(delete_index) >= 1:
+            if delete_index[0] == 0:
+                for index in range(len(delete_index)):
+                    if index == 0:
+                        delete_words_item(words_list, delete_index[index])
                     else:
-                        break
+                        # 如果索引连续，则删除，否则跳出循环
+                        if delete_index[index] - delete_index[index - 1] == 1:
+                            delete_words_item(words_list, delete_index[index])
+                        else:
+                            break
         # 倒序（尾部）
-        reverse_delete_list = []
+        # 倒序遍历整个字符串数组，记录下所有需删除的符号的索引
+        if len(words_list) == 0:
+            return ''
+        reverse_delete_index = []
         for index in range(len(words_list) - 1, -1, -1):
-            if words_list[index] in delete_model:
-                reverse_delete_list.append(index)
-        # print(reverse_delete_list)
-        if len(reverse_delete_list) >= 1 and reverse_delete_list[0] == len(words_list) - 1:
-            for index in range(len(reverse_delete_list)):
-                if index == 0:
-                    delete_words_item(words_list, reverse_delete_list[index])
-                else:
-                    if reverse_delete_list[index - 1] - reverse_delete_list[index] == 1:
-                        delete_words_item(words_list, reverse_delete_list[index])
+            if words_list[index] in delete_items:
+                reverse_delete_index.append(index)
+        # print(reverse_delete_index)
+        # 如果reverse_delete_index的最大值为字符串最后一位下标，则遍历reverse_delete_index
+        if len(reverse_delete_index) >= 1:
+            if reverse_delete_index[0] == len(words_list) - 1:
+                for index in range(len(reverse_delete_index)):
+                    if index == 0:
+                        delete_words_item(words_list, reverse_delete_index[index])
                     else:
-                        break
+                        # 如果下标号连续，则删除，否则跳出循环
+                        if reverse_delete_index[index - 1] - reverse_delete_index[index] == 1:
+                            delete_words_item(words_list, reverse_delete_index[index])
+                        else:
+                            break
     except Exception as ex:
-        print("format_words exception imformation: %s" % ex)
+        print("format_words exception imformation: %s; words: %s" % (ex, words))
     words = ''.join(words_list)
     return words
 
