@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6ef8c4d-9e54-4315-a316-13fccca1ff06" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/pdf_ocr.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ocr.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ocr.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/activate" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/activate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/activate.bat" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/activate.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/activate.xsh" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/activate.xsh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +86,7 @@
       <workItem from="1567739682242" duration="1343000" />
       <workItem from="1567741054931" duration="92000" />
       <workItem from="1567741167508" duration="449000" />
-      <workItem from="1567741636179" duration="360000" />
+      <workItem from="1567741636179" duration="1013000" />
     </task>
     <task id="LOCAL-00001" summary="适配原文件格式">
       <created>1566986789047</created>
@@ -123,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567739733329</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="1、changed to load configurations from a json file">
+      <created>1567742391888</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1567742391888</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,7 +147,8 @@
     <MESSAGE value="LICENSE.TXT" />
     <MESSAGE value="修改删除逗号逻辑" />
     <MESSAGE value="更改项目名称" />
-    <option name="LAST_COMMIT_MESSAGE" value="更改项目名称" />
+    <MESSAGE value="1、changed to load configurations from a json file" />
+    <option name="LAST_COMMIT_MESSAGE" value="1、changed to load configurations from a json file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
