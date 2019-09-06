@@ -1,6 +1,6 @@
 @echo off
 
-set "VIRTUAL_ENV=c:\git\baidu_ocr"
+set "VIRTUAL_ENV=c:\git\pdf_ocr"
 
 if defined _OLD_VIRTUAL_PROMPT (
     set "PROMPT=%_OLD_VIRTUAL_PROMPT%"
@@ -13,7 +13,7 @@ if defined _OLD_VIRTUAL_PROMPT (
     )
 )
 if not defined VIRTUAL_ENV_DISABLE_PROMPT (
-    set "PROMPT=(baidu_ocr) %PROMPT%"
+    set "PROMPT=(pdf_ocr) %PROMPT%"
 )
 
 REM Don't use () to avoid problems with them in %PATH%

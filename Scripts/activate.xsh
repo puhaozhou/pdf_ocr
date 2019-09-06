@@ -28,7 +28,7 @@ def _deactivate(args):
 _deactivate(["nondestructive"])
 aliases["deactivate"] = _deactivate
 
-$VIRTUAL_ENV = r"c:\git\baidu_ocr"
+$VIRTUAL_ENV = r"c:\git\pdf_ocr"
 
 $_OLD_VIRTUAL_PATH = $PATH
 $PATH = $PATH[:]

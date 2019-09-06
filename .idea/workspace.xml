@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6ef8c4d-9e54-4315-a316-13fccca1ff06" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/pdf_ocr.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ocr.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ocr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/activate" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/activate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/activate.bat" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/activate.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/activate.xsh" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/activate.xsh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,6 +34,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -81,6 +90,10 @@
       <workItem from="1566976417144" duration="25000000" />
       <workItem from="1567158241958" duration="7171000" />
       <workItem from="1567677669253" duration="613000" />
+      <workItem from="1567739682242" duration="1343000" />
+      <workItem from="1567741054931" duration="92000" />
+      <workItem from="1567741167508" duration="449000" />
+      <workItem from="1567741636179" duration="360000" />
     </task>
     <task id="LOCAL-00001" summary="适配原文件格式">
       <created>1566986789047</created>
@@ -103,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567494893234</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="更改项目名称">
+      <created>1567739733329</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1567739733329</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,7 +146,8 @@
     <MESSAGE value="适配原文件格式" />
     <MESSAGE value="LICENSE.TXT" />
     <MESSAGE value="修改删除逗号逻辑" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改删除逗号逻辑" />
+    <MESSAGE value="更改项目名称" />
+    <option name="LAST_COMMIT_MESSAGE" value="更改项目名称" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -146,5 +167,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/baidu_ocr$Ocr.coverage" NAME="Ocr Coverage Results" MODIFIED="1567160632712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pdf_ocr$Ocr.coverage" NAME="Ocr Coverage Results" MODIFIED="1567742012149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

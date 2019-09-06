@@ -128,9 +128,11 @@ def recognize_my_picture():
 
 if __name__ == '__main__':
     """ 你的 APPID AK SK """
-    APP_ID = '17130574'
-    API_KEY = 'eMzx7UaG6BrEFRkzFQbuS7Bm'
-    SECRET_KEY = 'wWSlbzm4B0heD6uInZvIqtmvKPjcqDYD'
+    with open("config.json", 'r') as conf:
+        load_dict = json.load(conf)
+        APP_ID = load_dict['APP_ID']
+        API_KEY = load_dict['API_KEY']
+        SECRET_KEY = load_dict['SECRET_KEY']
+        file_path = load_dict['FILE_PATH']
     client = AipOcr(APP_ID, API_KEY, SECRET_KEY)
-    file_path = "C:\\git\\baidu_ocr\\assets\\img\\"
     recognize_my_picture()
