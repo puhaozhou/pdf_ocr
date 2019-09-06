@@ -86,6 +86,7 @@ def get_file_ocr(img_path, img_name):
         else:
             return
         result_lists = result["words_result"]
+        # print(result_lists)
         for list in result_lists:
             words = format_words(list["words"])  # 格式化字符串
             # words = list["words"]
@@ -108,7 +109,8 @@ def recognize_my_picture():
             type_list = ["jpg", "png", "img"]
             if file_type in type_list:
                 # img_path = file_path + file
-                get_file_ocr(img_path, file)
+                img_name = file
+                get_file_ocr(img_path, img_name)
         txt_path = "%sresult.txt" % file_path
         with open(txt_path, "w") as f:
             length = len(ocr_result)
