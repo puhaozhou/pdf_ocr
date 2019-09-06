@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c6ef8c4d-9e54-4315-a316-13fccca1ff06" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ocr.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ocr.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +41,7 @@
   </component>
   <component name="RunManager">
     <configuration name="Ocr" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="baidu_ocr" />
+      <module name="pdf_ocr" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -80,7 +79,8 @@
       <option name="presentableId" value="Default" />
       <updated>1566976410164</updated>
       <workItem from="1566976417144" duration="25000000" />
-      <workItem from="1567158241958" duration="5615000" />
+      <workItem from="1567158241958" duration="7171000" />
+      <workItem from="1567677669253" duration="613000" />
     </task>
     <task id="LOCAL-00001" summary="适配原文件格式">
       <created>1566986789047</created>
@@ -96,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566986825936</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="修改删除逗号逻辑">
+      <created>1567494893234</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1567494893234</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,7 +125,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="适配原文件格式" />
     <MESSAGE value="LICENSE.TXT" />
-    <option name="LAST_COMMIT_MESSAGE" value="LICENSE.TXT" />
+    <MESSAGE value="修改删除逗号逻辑" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改删除逗号逻辑" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
