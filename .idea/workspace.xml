@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6ef8c4d-9e54-4315-a316-13fccca1ff06" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnitTest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ocr.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ocr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTest.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -134,7 +133,7 @@
       <workItem from="1567739682242" duration="1343000" />
       <workItem from="1567741054931" duration="92000" />
       <workItem from="1567741167508" duration="449000" />
-      <workItem from="1567741636179" duration="26431000" />
+      <workItem from="1567741636179" duration="26574000" />
     </task>
     <task id="LOCAL-00001" summary="适配原文件格式">
       <created>1566986789047</created>
@@ -192,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567755575005</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add unit test">
+      <created>1568018284390</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1568018284390</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,7 +226,8 @@
     <MESSAGE value="modify configurations" />
     <MESSAGE value="modify configurations 2" />
     <MESSAGE value="modify configurations 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify configurations 3" />
+    <MESSAGE value="add unit test" />
+    <option name="LAST_COMMIT_MESSAGE" value="add unit test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -63,7 +63,7 @@ def format_words(words):
         # 规则: 如果‘...’或‘.’或‘ ’前一位字符是其他字符，且字符串以数字结尾，则删除这些‘...’符号
         # 删除中间的符号 如：abc......123 ，这种情况下会把省略号全部删除
         # 如 1.2.3...abc 这种情况下，省略号不会被删除
-        # middle_to_delete = []
+        middle_to_delete = []
         # for i in range(len(new_words_list)):
         #     # 如果不是要删除的字符
         #     if new_words_list[i] not in delete_items:
@@ -111,7 +111,7 @@ def format_words(words):
 
         #  1.2.3 测试字符串 第一章 abc…………123
         index_cursor = 0
-        middle_delete_list = {}
+        # middle_delete_list = {}
         for i in range(len(new_words_list)):
             if i == 0:
                 if new_words_list[i] in delete_items:
