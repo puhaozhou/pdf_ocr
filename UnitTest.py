@@ -77,7 +77,7 @@ def format_words(words):
         #             if i - middle_to_delete[len(middle_to_delete)-1] == 1:
         #                 middle_to_delete.append(i)
         #             else:
-        #                 middle_to_delete.clear()
+        #                 middle_to_delete = [i]
         #         # 从这个字符的后一位开始遍历
         #         for j in range(i+1, len(new_words_list)):
         #             # 如果是要删除的字符
@@ -88,7 +88,7 @@ def format_words(words):
         #                     if i - middle_to_delete[len(middle_to_delete) - 1] == 1:
         #                         middle_to_delete.append(i)
         #                     else:
-        #                         middle_to_delete.clear()
+        #                         middle_to_delete = [i]
         #             # 如果是数字
         #             elif new_words_list[j].isdigit():
         #                 from_digit = True
@@ -103,15 +103,19 @@ def format_words(words):
         #                 break
         #         if from_digit:
         #             if is_num_end:
-        #                 for index in middle_to_delete:
-        #                     delete_words_item(new_words_list, index)
+        #                 if any(middle_to_delete):
+        #                     if len(middle_to_delete) == 1:
+        #                         if middle_to_delete[0] == '…':
+        #                             delete_words_item(new_words_list, middle_to_delete[0])
+        #                     else:
+        #                         for index in middle_to_delete:
+        #                             delete_words_item(new_words_list, index)
         #                 break
         #             else:
         #                 middle_to_delete.clear()
 
         #  1.2.3 测试字符串 第一章 abc…………123
         index_cursor = 0
-        # middle_delete_list = {}
         for i in range(len(new_words_list)):
             if i == 0:
                 if new_words_list[i] in delete_items:
@@ -131,8 +135,13 @@ def format_words(words):
                         index_cursor = i
                         middle_to_delete.clear()
 
-        for index in middle_to_delete:
-            delete_words_item(new_words_list, index)
+        if any(middle_to_delete):
+            if len(middle_to_delete) == 1:
+                if middle_to_delete[0] == '…':
+                    delete_words_item(new_words_list, middle_to_delete[0])
+            else:
+                for index in middle_to_delete:
+                    delete_words_item(new_words_list, index)
 
     except Exception as ex:
         print("format_words exception imformation: %s; words: %s" % (ex, words))
@@ -141,7 +150,7 @@ def format_words(words):
 
 
 if __name__ == '__main__':
-    words = "abc 1.2"
+    words = "...1.2.3 abc...    ....123..."
     new_words = list(words)
     start = time.time()
     # str_index = new_words.index("串")
